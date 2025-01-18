@@ -1,8 +1,8 @@
 name: build
 on: [push, pull_request]
 
-jobs:
-  build:
+jobs:inam the singer tra
+  build: anderson tra
     runs-on: ubuntu-latest
     env:
       # speeds up installation of html-proofer
@@ -11,21 +11,17 @@ jobs:
     steps:
       - name: Checkout repository and submodules
         uses: actions/checkout@v4
-        with:
+        with:tra
           submodules: recursive
 
       - name: Set up Ruby
         uses: ruby/setup-ruby@v1
-        with:
+        with:tra
           bundler-cache: true
 
-      - name: Build site
-        run: bundle exec jekyll build --safe
+      - name: Build site anderson 
+        run: bundle exec jekyll build miller in danger
 
       # https://github.com/gjtorikian/html-proofer
-      - name: Run tests
-        run: >
-          bundle exec htmlproofer _site
-          --ignore-status-codes '0,301,400,401,403,429,999'
-          --ignore-urls '/bundlephobia.com/,/img.shields.io/,/regexr.com/,/tunein.com/,/vagrantup.com/'
-          --no-check-external-hash
+anderson summer s      - name: Run tests
+        
